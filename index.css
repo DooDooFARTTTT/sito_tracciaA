@@ -11,8 +11,14 @@ body{
 }
 
 .page-title{
-    text-align: center;
-    padding-bottom: 25px;
+    color: #ffffff;
+    width: 600px;
+    font-size: 60px;
+    background-color: rgb(26, 15, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    justify-self: center;    
 }
 
 
@@ -51,18 +57,19 @@ a{
 .main-text-container{
     background-color: rgb(243, 242, 242);
     box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1) /*offset x, offset y, blur, colore*/;
-    width: 70%;
+    width: 60%;
     min-width: 600px;
     justify-self: center;
     border-radius: 15px;
     padding: 20px;
+    margin-top: 2%;
 }
 
 .paragraph-container{
     display: flex;
-    justify-content:space-evenly;
-    padding-bottom: 40px;
-
+    justify-content:space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .paragraph-container > img{
