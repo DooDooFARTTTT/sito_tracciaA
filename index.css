@@ -2,6 +2,7 @@ body{
     background-image: url(background.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .nav-container{
@@ -69,15 +70,35 @@ a{
     max-width: 300px;
 }
 
-button{
+.download-button{
     border-radius:40px;
     border: none;
-    background-color: #033a4e;
+    background-color: rgb(78, 45, 1);
+    height: 80px;
+    width: 300px;
     display: flex;
+    align-items: center;
+    justify-content: center; 
     justify-self: center;
-    height: 70px;
-    width: 200px;
-        
+    font-size: 30px;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.download-button:hover{
+    border-radius:20px;
+    border: none;
+    background-color: rgb(26, 15, 0);
+    transition-duration: 300ms;
+    height: 80px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    justify-self: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #ffffff;
 }
 
 
@@ -93,7 +114,18 @@ button{
 }
 
 .character-container{
-    background-color: rgb(243, 242, 242);
+    background-color: rgb(78, 45, 1);
+    color: #ffffff;
+    box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.1) /*offset x, offset y, blur, colore*/;
+    width: 400px;
+    height: 320px;
+    border-radius: 30px;
+}
+
+.character-container:hover{
+    background-color: rgb(26, 15, 0);
+    color: #ffffff;
+    transition-duration: 250ms;
     box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.1) /*offset x, offset y, blur, colore*/;
     width: 400px;
     height: 320px;
@@ -119,6 +151,8 @@ button{
     margin-left: 10%;
     margin-right: 10%;
 }
+
+
 table{
     width: 100%;
     border: #000000 solid 1px;
@@ -132,4 +166,14 @@ table{
 
 thead, th, tr, td{
     border: #000000 solid 1px;
+}
+
+.contacts-container{
+    margin-top: 60px;
+    background-color: rgb(78, 45, 1);
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
 }
