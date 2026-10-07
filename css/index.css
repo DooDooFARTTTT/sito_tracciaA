@@ -1,5 +1,5 @@
 body{
-    background-image: url(background.webp);
+    background-image: url("../img/background.webp");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -55,7 +55,7 @@ a{
 }
 
 .main-text-container{
-    background-color: rgb(243, 242, 242);
+    background-color: rgb(78, 45, 1);
     box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1) /*offset x, offset y, blur, colore*/;
     width: 60%;
     min-width: 600px;
@@ -66,6 +66,7 @@ a{
 }
 
 .paragraph-container{
+    color: #ffffff;
     display: flex;
     justify-content:space-around;
     padding-top: 20px;
@@ -77,7 +78,7 @@ a{
     max-width: 300px;
 }
 
-.download-button{
+.pre-order-button{
     border-radius:40px;
     border: none;
     background-color: rgb(78, 45, 1);
@@ -90,9 +91,10 @@ a{
     font-size: 30px;
     font-weight: bolder;
     color: #ffffff;
+    margin-top: 50px
 }
 
-.download-button:hover{
+.pre-order-button:hover{
     border-radius:20px;
     border: none;
     background-color: rgb(26, 15, 0);
@@ -106,6 +108,7 @@ a{
     font-size: 30px;
     font-weight: bolder;
     color: #ffffff;
+    margin-top: 50px
 }
 
 
@@ -151,7 +154,6 @@ a{
     width: 90%;
 }
 
-
 .requirment-container{
     display: flex;
     justify-content: center;
@@ -166,13 +168,20 @@ table{
     border-collapse: collapse;
     margin-top: 15px;
     text-align: center;
-    background-color: #033a4e;
+    background-color: rgb(78, 45, 1);
     color: white;
     font-weight: 200;
+    font-size: 30px;
 }
 
 thead, th, tr, td{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: #000000 solid 1px;
+    padding: 10px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: rgb(89, 45, 1);
 }
 
 .contacts-container{
