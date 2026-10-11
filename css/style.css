@@ -198,7 +198,7 @@ tbody tr:nth-child(odd){
 
 .form-container{
     color: white;
-
+    font-size: 30px;
 }
 
 .information-container{
@@ -231,7 +231,7 @@ textarea{
     font-size: 30px;
     font-weight: bolder;
     color: #ffffff;
-    margin-top: 200px
+    margin-top: 75px
 }
 
 .form-button:hover{
@@ -248,5 +248,5 @@ textarea{
     font-size: 30px;
     font-weight: bolder;
     color: #ffffff;
-    margin-top: 200px
+    margin-top: 75px;
 }
