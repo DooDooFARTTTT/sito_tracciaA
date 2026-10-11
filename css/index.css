@@ -71,13 +71,15 @@ a{
     color: #ffffff;
     display: flex;
     justify-content:space-around;
+    font-size: 25px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .paragraph-container > img{
     border-radius: 10px;
-    max-width: 300px;
+    max-width: 400px;
+    padding: 20px;
 }
 
 .pre-order-button{
