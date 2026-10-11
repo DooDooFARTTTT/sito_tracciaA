@@ -191,5 +191,61 @@ tbody tr:nth-child(odd){
     position: absolute;
     right: 0;
     left: 0;
+    bottom: 0;
     text-align: center;
+}
+
+.form-container{
+    color: white;
+
+}
+
+.information-container{
+    padding: 10px;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.text-container{
+    padding-top: 100px;
+    display: grid;
+    justify-content: center;
+}
+
+textarea{
+    max-width: 100%;
+    width: 400px;
+}
+
+.form-button{
+    border-radius:40px;
+    border: none;
+    background-color: rgb(26, 15, 0);
+    height: 80px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    justify-self: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #ffffff;
+    margin-top: 50px
+}
+
+.form-button:hover{
+    border-radius:20px;
+    border: none;
+    background-color: rgba(96, 56, 0, 0.745);
+    transition-duration: 300ms;
+    height: 80px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    justify-self: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #ffffff;
+    margin-top: 50px
 }
