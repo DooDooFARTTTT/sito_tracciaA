@@ -131,7 +131,7 @@ si distanzia di 50px dagli elementi sopra di esso*/
 }
 
 
-/*l'animazione dura 300ms e lo sfondo del bottone diventa marrone scuro, oltre ai
+/*l'animazione dura 300ms   e lo sfondo del bottone diventa marrone scuro, oltre ai
 bordi che diventano meno arrotondati*/
 .pre-order-button:hover{
     border-radius:20px;
