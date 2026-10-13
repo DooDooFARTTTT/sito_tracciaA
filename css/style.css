@@ -4,7 +4,6 @@ body{
     background-size: cover;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0%;
-
 }
 
 .nav-container{
@@ -12,6 +11,10 @@ body{
     justify-content: center;
 }
 
+
+/*classe per il titolo di ogni pagina. 
+il titolo deve essere centrato nella pagina di colore marrone chiaro e uno background
+marrone scuro trasparente*/
 .page-title{
     color: #ffffff;
     width: 600px;
@@ -23,39 +26,58 @@ body{
     justify-self: center;    
 }
 
-
+/*classe per la navbar di ogni pagina
+la navbar è centrata nella pagina, i link al suo interno sono divisi equamente nello spazio.
+il testo è bianco ei bordi sono arrotondati*/
 .navbar{    
     background-color: rgb(78, 45, 1);
     display: flex;
     justify-content:space-evenly;
     font-size: 30px;
     max-width: 700px;
-
+    min-width: 480px;
     border-radius: 15px;
 }
 
+
+
+/*i link all'interno della navbar sono di colore bianco, con un padding generale
+di 10px e a dx e sx di 15px aggiuntivi*/
 .navbar > a{    
     color: #ffffff;
     padding: 10px;
+    
     padding-left: 15px;
     padding-right: 15px;
 }
 
+
+/*hover per la navbar, lo sfondo diventa più scuro, la transizione dura 600ms
+e i bordi si arrotondano*/
 .navbar > a:hover{    
     background-color: rgb(26, 15, 0);
     transition-duration: 600ms;
     border-radius: 15px;
+    cursor: pointer;
 }
 
+/*direzione generale per la rimozione della sottolineatura ai link*/
 a{
     text-decoration: none;
 }
 
+/*id per il link attivo della navar, lo sfondo diventa più scuro e con i bordi arrotondati*/
 #current-link{
     background-color: rgb(26, 15, 0);
     border-radius: 15px;
 }
 
+
+/*classe per il contenitore principale.
+lo sfondo è marrone chiaro, con una leggera ombreggiaturo su titti i lati
+la larghezza occupa il 60% della larghezza della pagina o 480px quando rimpicciolità
+è posizionato al centro pagina e i bordi sono arrotondati.
+gli elementi interni sono distanziati di 20px e il contenitore è distanziato del 2% dal margien superiore*/
 .main-text-container{
     background-color: rgb(78, 45, 1);
     box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1) /*offset x, offset y, blur, colore*/;
@@ -67,6 +89,9 @@ a{
     margin-top: 2%;
 }
 
+/*contenitore per i paragrafi della home
+il testo è di colore bianco e su tutto lo spazio orrizontale, immagine compresa.
+il font è di 25px e gli elementi sono distaniato sotto e sopra di 25px*/
 .paragraph-container{
     color: #ffffff;
     display: flex;
@@ -76,6 +101,7 @@ a{
     padding-bottom: 20px;
 }
 
+/*l'immagine del paragrafo ha i bordi arrotondati, un padding di 20px e una dimensione massima di 400px*/
 .paragraph-container > img{
     border-radius: 10px;
     max-width: 400px;
@@ -83,6 +109,11 @@ a{
     padding: 20px;
 }
 
+/*Classe per il bottone di preorder per ogni pagina
+i bordi sono molto arrotondati ma invisibili.
+lo sfondo è marrone chiaro, è allineato al centro, insieme al suo testo interno la cui dimensione è di 30px
+in grassetto.
+si distanzia di 50px dagli elementi sopra di esso*/
 .pre-order-button{
     border-radius:40px;
     border: none;
@@ -99,6 +130,9 @@ a{
     margin-top: 50px
 }
 
+
+/*l'animazione dura 300ms e lo sfondo del bottone diventa marrone scuro, oltre ai
+bordi che diventano meno arrotondati*/
 .pre-order-button:hover{
     border-radius:20px;
     border: none;
@@ -200,6 +234,8 @@ tbody tr:nth-child(odd){
 .form-container{
     color: white;
     font-size: 30px;
+    text-align: center;
+    width: 100%;
 }
 
 .information-container{
@@ -214,9 +250,21 @@ tbody tr:nth-child(odd){
     justify-content: center;
 }
 
+input{
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+    height: 25px;
+    font-size: 25px;
+
+}
+
 textarea{
-    max-width: 100%;
-    width: 400px;
+    max-width: 800px;
+    min-width: 400px;
+    height: 150px;
+    font-size:20px;
+    border-radius: 10px;
 }
 
 .form-button{
